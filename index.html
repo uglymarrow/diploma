@@ -35,7 +35,13 @@
             (window, document, 'script', 'https://abt.s3.yandex.net/expjs/latest/exp.js', 'ymab');
         ymab('metrika.89890380', 'init'/*, {clientFeatures}, {callback}*/);
     </script>
-
+    <script>
+     document.addEventListener('yacounter89890380inited', () => {
+        // console.log('Метрика 56392285 загрузилась');
+        ym(89890380, 'setUserID', '46217');
+        ym(89890380, 'userParams', '{userID: "46217"}');
+    })
+    </script>
 </head>
 
 <body>
