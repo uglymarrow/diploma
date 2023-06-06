@@ -32,9 +32,9 @@
        var goalParams = { order_price: 101, currency: "RUB" };
        ym(89890380, 'params', goalParams) 
 
-//        console.log('Метрика 89890380 загрузилась другая инициализация');
-//        ym(89890380, 'setUserID', '468');
-//        ym(89890380, 'userParams', '{userID: "468"}');
+window.yaParams = { "Имя_страницы": "{{page_name}}", "Дата": "{{today}}", "Дата_прибытия": "{{arrival}}", "Дата_отправления": "{{departure}}", "Имя_гостя": "{{first_name}}", "Фамилия_гостя": "{{last_name}}", "Почта": "{{e_mail}}", "Стоимость номеров": "{{booking_price}}" };
+ym(89890380, 'params', window.yaParams||{});
+
     </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/89890380" style="position:absolute; left:-9999px;" alt="" /></div>
